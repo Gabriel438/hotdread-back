@@ -5,7 +5,7 @@ quarkus:
     cors:
       ~: true
       methods: GET,PUT,POST
-    port: 8081
+    port: ${PORT:8081}
   rest-client:
     virustotal-service:
       url: ${virustotal.uri}/url/report
