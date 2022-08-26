@@ -31,6 +31,8 @@ java {
     targetCompatibility = JavaVersion.VERSION_11
 }
 
+task stage(dependsOn: ['build', 'clean'])
+
 compileJava {
     options.encoding = 'UTF-8'
     options.compilerArgs << '-parameters'
