@@ -15,4 +15,9 @@ public interface  VirusTotalService {
     VirusTotalResponse fetchAll(@QueryParam("apikey") String apiKey,
                                      @QueryParam("resource") String uri);
 
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    VirusTotalResponse fetchAll(@QueryParam("apikey") String apiKey,
+                                @QueryParam("resource") String uri);
+
 }
